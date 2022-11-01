@@ -12,7 +12,6 @@ ul {
   list-style: none;
 }
 body {
-  min-width: 1600px;
   font-family: 'Roboto', sans-serif;
 }
 .icons {
@@ -71,6 +70,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.current {
+  color: var(--blue);
 }
 .current::after {
   position: absolute; 
@@ -174,7 +176,7 @@ ul {
   padding-top: 94px;
 }
 .section-white1 {
-  background-color: #F5F5F5;  
+  background-color: #FFFFFF;  
 }
 .list-items {
   margin-right: 30px;
@@ -211,7 +213,7 @@ ul {
 }
 .section.white2 {
   padding-bottom: 94px;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   flex-direction: column;  
 } 
 
@@ -511,7 +513,7 @@ ul {
 
 .project:hover,
 .project:focus {
-  transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: box-shadow transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects h2 {
@@ -547,7 +549,8 @@ ul {
 }
 .filter:hover,
 .filter:focus {
-  transition: border color background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   background-color: var(--blue);
   color: #FFFFFF;
   opacity: 0.9;
@@ -555,14 +558,7 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter:focus  {
-  background-color: var(--blue);
-  color: #FFFFFF;
-  opacity: 0.9;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 .filter {
   margin-right: 8px;
   padding: 6px 22px;
